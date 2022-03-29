@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Find the Keys!</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="hud">
+            <img id="logo" src="./assets/logo.png">
+            <a id="lives">Lives: 3</a>
+            <a id="keys">Keys Left: 1</a>
+            <a id="level">Level: 1</a>
+            <a> </a>
+            <a> </a>
+            <div class="btn-group">
+            <button class="btn" id="instructionsbtn">Instructions</button>
+            <button class="btn" id="camera">Top-Down View</button>
+            </div> 
+            <img class="sound" id="mute" src="./assets/mute.png">
+            <img class="sound" id="unmute" src="./assets/unmute.png">
+        </div>
+        <div id="gameoverblocker">
+            <div class="game-over-layout" id="gameover">
+                <p class='game-text' id="game-over-main-text">GAME OVER</p>
+                <p class='game-text' id="game-over-sub-text"> </p>
+                <p class='game-text'>(Refresh the browser to restart)</p>
+            </div>      
+        </div>
+        <div id="instructionsblocker">
+            <img id="game-info-logo" src="./assets/logo.png">
+            <div id="instructions">
+                <p class='game-text' id="start-game-text">Click to Play</p>
+                <p class='game-text' id="start-game-sub-text">Click 'Instructions' on the display bar to find out more!</p>
+            </div>
+        </div>
+        <script src="./build/three.js"></script>
+        <script src="./js/loaders/GLTFLoader.js"></script>
+        <script src="./js/controls/OrbitControls.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
